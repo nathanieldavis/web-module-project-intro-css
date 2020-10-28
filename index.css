@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
+
+/* Eric Myers Reset */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+/* Removes default browser button styles */
+input, button, submit { border:none; } 
+
+/* Color Scheme */
+:root {
+  --orange: #FF764E;
+  --light-blue:#5ED3EB;
+  --yellow: #FFCD69;
+  --bg-main: #DDB9A3;
+  --bg-footer: #F9E7DC;
+}
+
+/* Typography / Main Page Styles*/
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 4rem;
+}
+
+/* TOP NAV */
+.nav-top {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+button {
+  margin: 0 10%;
+  padding: .5% 2%;
+  box-shadow: none !important;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 1.7rem;
+}
+.button-plan {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+.button-learn {
+  background: var(--light-blue);
+  border-color: var(--light-blue);
+  color: #fff;
+}
+.button-get-involved {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  margin: 5% auto;
+}
+header .yosemite-img {
+  width:30%;
+  display:inline-block;
+}
+header .yosemite-img img {
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+header .yosemite-text {
+  width:50%;
+  display:inline-block;
+  vertical-align: top;
+  padding-top: 2%;
+}
+
+/* SECTION ONE */
+.section-one {
+  width: 80%;
+  margin: 5% auto;
+  padding: 3% 6%;
+  background-color: var(--bg-main);
+  color: #fff;
+}
+
+/* SECTION TWO */
+.section-two p {
+  width: 30%;
+  margin: 0 auto;
+}
+.section-two p span {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--bg-footer);
+}
+.nav-bottom {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.bg-image {
+  /* image specified in separate class below */
+  height: 28vh;
+  width: 100%; 
+}
+
+.bg-image-yosemite {
+  background-image: url("assets/footer_img.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+
+
+/* MISC */
+section {
+  padding: 4% 0;
+}
+
+img {
+  height: 200px;
+  width: 200px
+}
