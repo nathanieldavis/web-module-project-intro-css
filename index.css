@@ -64,9 +64,9 @@ h1 {
 }
 button {
   margin: 0 10%;
-  padding: 1% 2%;
+  padding: .5% 2%;
   box-shadow: none !important;
-  border-radius: 8px;
+  border-radius: 14px;
   font-family: inherit;
   font-size: 1.7rem;
 }
@@ -88,8 +88,8 @@ button {
 
 /* HEADER */
 header {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 5% auto;
 }
 header .yosemite-img {
   width:30%;
@@ -97,17 +97,20 @@ header .yosemite-img {
 }
 header .yosemite-img img {
   border-radius: 100px;
+  height: 200px;
+  width: 200px;
 }
 header .yosemite-text {
   width:50%;
   display:inline-block;
   vertical-align: top;
+  padding-top: 2%;
 }
 
 /* SECTION ONE */
 .section-one {
   width: 80%;
-  margin: 0 auto;
+  margin: 5% auto;
   padding: 3% 6%;
   background-color: var(--bg-main);
   color: #fff;
@@ -122,22 +125,29 @@ header .yosemite-text {
   font-weight: bold;
 }
 
-/* SECTION THREE */
+/* FOOTER */
 footer {
   background-color: var(--bg-footer);
-}
-footer img {
-  width: 100%;
-  object-fit: cover;
 }
 .nav-bottom {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.bg-image {
+  /* image specified in separate class below */
+  height: 28vh;
+  width: 100%; 
+}
+
+.bg-image-yosemite {
+  background-image: url("assets/footer_img.jpg");
+  background-position: center top;
+  background-size: cover;
+}
 
 
 
-
+/* MISC */
 section {
   padding: 4% 0;
 }
