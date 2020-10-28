@@ -22,6 +22,9 @@ font: inherit;
 vertical-align: baseline;  
 }
 
+/* Removes default browser button styles */
+input, button, submit { border:none; } 
+
 /* Color Scheme */
 :root {
   --orange: #FF764E;
@@ -31,7 +34,7 @@ vertical-align: baseline;
   --bg-footer: #F9E7DC;
 }
 
-/* Typography */
+/* Typography / Main Page Styles*/
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,51 +54,87 @@ body {
 }
 h1 {
   font-family: 'Chelsea Market', cursive;
+  font-size: 4rem;
 }
 
-/* Site styles */
+/* TOP NAV */
 .nav-top {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.nav-top button {
+button {
   margin: 0 10%;
+  padding: 1% 2%;
+  box-shadow: none !important;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1.7rem;
+}
+.button-plan {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+.button-learn {
+  background: var(--light-blue);
+  border-color: var(--light-blue);
+  color: #fff;
+}
+.button-get-involved {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: #fff;
 }
 
+/* HEADER */
 header {
-  display: flex;
-  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 header .yosemite-img {
-  width: 30%
+  width:30%;
+  display:inline-block;
 }
-header .yosemite {
-  width: 70%
+header .yosemite-img img {
+  border-radius: 100px;
+}
+header .yosemite-text {
+  width:50%;
+  display:inline-block;
+  vertical-align: top;
 }
 
+/* SECTION ONE */
 .section-one {
   width: 80%;
   margin: 0 auto;
   padding: 3% 6%;
   background-color: var(--bg-main);
+  color: #fff;
 }
 
+/* SECTION TWO */
 .section-two p {
   width: 30%;
   margin: 0 auto;
 }
+.section-two p span {
+  font-weight: bold;
+}
 
+/* SECTION THREE */
+footer {
+  background-color: var(--bg-footer);
+}
 footer img {
   width: 100%;
   object-fit: cover;
 }
 .nav-bottom {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.nav-bottom button {
-  margin: 0 10%;
-}
+
 
 
 
